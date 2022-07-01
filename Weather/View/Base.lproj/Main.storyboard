@@ -35,12 +35,15 @@
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="locationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Te-Er-63v"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7Y-Vi-m8t">
                                                 <rect key="frame" x="50" y="0.0" width="254" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-TQ-ATH">
                                                 <rect key="frame" x="314" y="0.0" width="40" height="40"/>
@@ -51,6 +54,9 @@
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMF-JG-7jd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -117,6 +123,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="JC5-46-Ksz" id="nfI-uc-WXe"/>
                         <outlet property="conditionImageView" destination="oEb-AQ-PrU" id="Wm0-Ln-vZk"/>
+                        <outlet property="searchTextField" destination="i7Y-Vi-m8t" id="p17-wh-4xS"/>
                         <outlet property="temperatureLabel" destination="Jjs-kG-AKl" id="Min-AX-6Vv"/>
                     </connections>
                 </viewController>
@@ -131,7 +138,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="sun.max" catalog="system" width="128" height="124"/>
         <namedColor name="WeatherColor">
-            <color red="0.14641535280000001" green="0.25842958690000001" blue="0.27843534949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.14599999785423279" green="0.25799998641014099" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
